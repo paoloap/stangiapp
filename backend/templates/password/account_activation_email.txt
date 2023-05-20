@@ -1,0 +1,26 @@
+{% autoescape off %}
+
+Ciao,
+abbiamo creato il tuo account su StangiApp, clicca sul link qui sotto per impostare la tua password.
+
+{{ protocol }}://{{ domain }}{% url 'password_reset_confirm' uidb64=uid token=token %}
+
+Questo link può essere usato una volta sola. Se necessiti un nuovo reset password, per favore visita {{ protocol }}://{{domain}} e ripeti la procedura.
+
+Se non hai mai richiesto l'attivazione di un account su StangiApp, ignora questo messaggio.
+
+Cordiali saluti,
+Lo staff di StangiApp
+
+::::::::: __ 
+:::::::: /\ \ 
+::::::: /::\ \ 
+:::::: /:/\:\_\ 
+::::: /:/ /:/ / 
+:::: /:/_/:/ / 
+:::: \:\/:/ / 
+::::: \::/_/ 
+:::::: \:\ \ 
+::::::: \:\_\ 
+:::::::: \/_/
+{% endautoescape %}

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="221.94614mm"
+   height="85.171333mm"
+   viewBox="0 0 221.94614 85.171333"
+   version="1.1"
+   id="svg10608"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   sodipodi:docname="reminderseparator.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview10610"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.6137977"
+     inkscape:cx="-278.59342"
+     inkscape:cy="163.73473"
+     inkscape:window-width="1914"
+     inkscape:window-height="1017"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs10605" />
+  <g
+     inkscape:label="Livello 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-1.964525,-105.26775)">
+    <path
+       id="rect1444"
+       style="opacity:0.7;fill:#ffffff;stroke-width:0.339778"
+       d="M 41.691781,144.63094 H 220.22961 c 2.0393,0 3.68105,1.64175 3.68105,3.68105 0,2.0393 -1.64175,3.68105 -3.68105,3.68105 H 41.691781 c -2.039303,0 -3.68105,-1.64175 -3.68105,-3.68105 0,-2.0393 1.641747,-3.68105 3.68105,-3.68105 z m 2.85841,-39.36319 c 23.592456,0 42.585663,18.9932 42.585663,42.58566 0,23.59246 -18.993207,42.58567 -42.585663,42.58567 -23.592459,0 -42.585666,-18.99321 -42.585666,-42.58567 0,-23.59246 18.993207,-42.58566 42.585666,-42.58566 z" />
+  </g>
+</svg>

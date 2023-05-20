@@ -1,0 +1,26 @@
+html {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('assets/svg/background.svg');
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+@font-face {
+  font-family: 'Staatliches-Regular';
+  src: local('Staatliches-Regular'), url(assets/fonts/Staatliches-Regular.ttf);
+}
+@font-face {
+  font-family: 'URWGothic-Book';
+  src: local('URWGothic-Book'), url(assets/fonts/URWGothic-Book.otf);
+}

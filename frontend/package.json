@@ -1,0 +1,46 @@
+{
+  "name": "stangiapp",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "axios": "^0.19.2",
+    "qs": "^6.11.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.1",
+    "react-router-dom": "^5.3.1",
+    "react-scripts": "3.4.3",
+    "react-select": "^5.3.2",
+    "react-swipeable-views": "^0.14.0",
+    "react-validation": "^3.0.7",
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1",
+    "sweetalert2": "^11.4.13"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "relocate": "react-scripts build && rm -rf ../app/build && mv -f build ../app && docker exec -u 0 -it stangiapp_web_1 rm -rf /home/app/web/build /home/app/web/staticfiles/css /home/app/web/staticfiles/js /home/app/web/staticfiles/media && docker cp ../app/build stangiapp_web_1:/home/app/web/build && docker exec -u 0 -it stangiapp_web_1 mv /home/app/web/build/static/media /home/app/web/staticfiles/ && docker exec -u 0 -it stangiapp_web_1 mv /home/app/web/build/static/js /home/app/web/staticfiles/ && docker exec -u 0 -it stangiapp_web_1 mv /home/app/web/build/static/css /home/app/web/staticfiles/ && docker cp src/assets/favicon.ico stangiapp_web_1:/home/app/web/staticfiles/media/ && docker cp src/assets/logoStangi.png stangiapp_web_1:/home/app/web/staticfiles/media/"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "redux-devtools-extension": "^2.13.9"
+  }
+}

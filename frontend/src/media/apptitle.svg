@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="121.21618mm"
+   height="34.087425mm"
+   viewBox="0 0 121.21618 34.087425"
+   version="1.1"
+   id="svg10190"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   sodipodi:docname="appname.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview10192"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.6137977"
+     inkscape:cx="-467.58077"
+     inkscape:cy="67.611853"
+     inkscape:window-width="1914"
+     inkscape:window-height="1017"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs10187" />
+  <g
+     inkscape:label="Livello 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-52.329502,-130.8097)">
+    <g
+       id="g303020"
+       transform="matrix(-2.6404077,0,0,2.6404077,187.87118,107.32776)">
+      <path
+         id="path81368"
+         style="fill:#eeacbe;fill-opacity:1;stroke-width:0.713562"
+         d="M 8.7659063,15.182492 C 8.8475354,12.160051 11.439229,9.7503751 14.60838,9.7503475 h 0.738662 V 20.901864 H 14.60838 c -3.286739,0 -5.9271281,-2.584783 -5.8424737,-5.719372 z m 1.4591197,0.14358 h 1.461116 c 1.2e-5,-1.539698 1.308341,-2.787861 2.922238,-2.787858 v -1.393939 c -2.420858,-1e-6 -4.383354,1.872264 -4.383354,4.181822 z"
+         inkscape:export-filename="/home/barrotes/get/logo.png"
+         inkscape:export-xdpi="300.02823"
+         inkscape:export-ydpi="300.02823"
+         sodipodi:nodetypes="ssccsscccccc" />
+      <path
+         d="m 5.4254883,14.646024 h 2.2082444 v 1.40447 H 5.4254883 Z M 7.4924017,9.8863045 8.5332673,8.8932998 10.095133,10.383495 9.0528232,11.37568 Z m 0,10.9238925 1.561148,-1.489367 1.0408653,0.993689 -1.5611477,1.488691 z"
+         style="fill:#eeacbe;fill-opacity:1;stroke-width:0.0718955"
+         id="path81396"
+         inkscape:export-filename="/home/barrotes/get/logo.png"
+         inkscape:export-xdpi="300.02823"
+         inkscape:export-ydpi="300.02823" />
+      <rect
+         style="fill:#eeacbe;fill-opacity:1;stroke-width:0.1"
+         id="rect81972"
+         width="1.2323319e-06"
+         height="5.5739559e-07"
+         x="14.74704"
+         y="20.901861" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#7fe4cc;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="51.736835"
+       y="162.51932"
+       id="text2112"><tspan
+         sodipodi:role="line"
+         id="tspan2110"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:42.3333px;font-family:Staatliches;-inkscape-font-specification:'Staatliches, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#7fe4cc;fill-opacity:1;stroke-width:0.264583"
+         x="51.736835"
+         y="162.51932">STANGI</tspan></text>
+  </g>
+</svg>

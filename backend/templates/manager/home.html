@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated and user.is_staff%}
+  <p>Console di gestione piattaforma</p>
+  <p>utente: {{ user.username }}</p>
+  <p><a href="{% url 'manager.create_user_profile' %}">Crea Profilo Utente</a></p>
+  <p><a href="{% url 'manager.list_user_profiles' %}">Gestisci Profili Utente</a></p>
+  </p><a href="{% url 'manager.create_reminder' %}">Crea Scadenza</a></p>
+  <br />
+  <br />
+  <br />
+  <a href="{% url 'manager.logout' %}">Log Out</a>
+{% elif not user.is_authenticated %}
+  <p>Utente non autenticato.</p>
+{% elif not user.is_staff %}
+  <p>Non sei un utente manager</p>
+  <a href="{% url 'manager.login' %}">Log In</a>
+{% endif %}
+{% endblock %}

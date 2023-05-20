@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated and user.is_staff%}
+  {% csrf_token %}
+  Hi {{ user.username }}!
+  <h2>Modifica profilo utente</h2>
+  <h4>{{message}}</h4>
+  <p><a href="{% url 'manager.list_user_reminders' %}?username={{username}}">Lista scadenze</a></p>
+  <form action={% url 'password_reset' %} method="post">
+    <input type="hidden" name="activate_account" value={{email}}>
+    <input type="submit" class="submit_btn btn label-success" value="Invia email di attivazione account" />
+  </form>
+
+  <form method="post">
+    {{ user_form.as_p }}
+    {% for elem in fields %}
+      {{ elem.form.as_p }}
+    {% endfor %}
+    <button type="submit" >Salva</button>
+  </form>
+  <p><a href="{% url 'manager.home' %}">Torna alla schermata iniziale</a></p>
+  <p><a href="{% url 'manager.logout' %}">Log Out</a></p>
+{% elif not user.is_authenticated %}
+  <p>Credenziali errate.</p>
+{% elif not user.is_staff %}
+  {% csrf_token %}
+  <p>Non sei un utente manager</p>
+  <a href="{% url 'manager.login' %}">Log In</a>
+{% endif %}
+{% endblock %}

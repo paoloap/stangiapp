@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<h2>Stangi - Accedi come Manager</h2>
+<form method="post">
+  {% csrf_token %}
+  {% if logged_not_manager %}
+    <h4>Puoi accedere solo se sei manager</h4>
+  {% elif just_logged_out %}
+    <h4>Sei uscito</h4>
+  {% endif %}
+  {{ form.as_p }}
+  <button type="submit">Log In</button>
+</form>
+{% endblock %}

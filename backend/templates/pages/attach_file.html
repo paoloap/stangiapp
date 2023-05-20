@@ -1,0 +1,20 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/attach_file.css' %}">
+<link rel="stylesheet" href="{% static 'css/fonts.css' %}">
+
+{% block content %}
+<div class="bg_container" style="background-image: url('{% static "img/background.svg"%}'">
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <label for="input_file">
+      <input type="file" class="input_file" name="myfile">
+    </label>
+    <button class="btn_green" type="submit">Allega</button>
+  </form>
+  <div class="back_container">
+    <a href="{{ frontend_url }}">
+      <img class="btn_back" src="{% static "img/back-arrow.svg"%}" />
+    </a>
+  </div>
+</div>
+{% endblock %}

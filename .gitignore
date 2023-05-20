@@ -1,0 +1,5 @@
+.env.prod
+.env.prod.db
+.env.prod.proxy-companion
+backend/build
+*.swp

@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated and user.is_staff%}
+  {% csrf_token %}
+  Hi {{ user.username }}!
+  <h4>Elenco scadenze dell'utente {{username}}</h4>
+  {% for reminder in reminders %}
+  <p><a href="{% url 'manager.edit_reminder' %}?id={{reminder.id}}">
+    {{reminder.id}} - {{reminder.title}} - {{reminder.expire_date}}
+  </a></p>
+  {% endfor %}
+  </form>
+  <p><a href="{% url 'manager.manage_user_profile' %}?username={{username}}">Torna al profilo utente</a></p>
+  <p><a href="{% url 'manager.home' %}">Torna alla schermata iniziale</a></p>
+  <p><a href="{% url 'manager.logout' %}">Log Out</a></p>
+{% elif not user.is_authenticated %}
+  <p>Credenziali errate.</p>
+{% elif not user.is_staff %}
+  {% csrf_token %}
+  <p>Non sei un utente manager</p>
+  <a href="{% url 'manager.login' %}">Log In</a>
+{% endif %}
+{% endblock %}

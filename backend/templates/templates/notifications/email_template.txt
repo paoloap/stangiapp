@@ -1,0 +1,8 @@
+Ciao {{ user }},
+ti ricordo che in data {{ targer_date }} scadranno i termini del seguente pagamento:
+{{ reminder_title }}
+Accedi a StangiApp per ulteriori dettagli.
+
+A presto!
+
+// powered by exxra / porcedda.com //
