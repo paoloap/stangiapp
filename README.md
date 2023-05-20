@@ -1,5 +1,5 @@
 # STANGIAPP
-### Django backend for a reminders' management applicationi, and related ReactJS frontend, with:
+### Django backend for a reminders' management application, and related ReactJS frontend, with:
 - Nginx reverse proxy with automatic keys update
 - Manager dashboard for creation and managements of user profiles and reminders
 - API with secure authentication through access token, refresh token and csrf token
