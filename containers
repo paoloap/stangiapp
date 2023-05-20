@@ -1,0 +1,20 @@
+CONTAINER ID   IMAGE                                    COMMAND                  CREATED         STATUS                 PORTS                                        NAMES
+07557b09dd09   jrcs/letsencrypt-nginx-proxy-companion   "/bin/bash /app/entr…"   8 minutes ago   Up 8 minutes                                                        impensa_nginx-proxy-letsencrypt_1
+4ad414d0b9c3   impensa_nginx-proxy                      "/app/docker-entrypo…"   8 minutes ago   Up 8 minutes           0.0.0.0:80->80/tcp, 0.0.0.0:443->443/tcp     nginx-proxy
+1c8200e16e86   impensa_web                              "/home/app/web/entry…"   8 minutes ago   Up 8 minutes           8001/tcp                                     impensa_web_1
+560b63e2b961   impensa_celery                           "/home/app/web/entry…"   8 minutes ago   Up 8 minutes                                                        impensa_celery_1
+0757d97eb689   impensa_celery-beat                      "/home/app/web/entry…"   8 minutes ago   Up 8 minutes                                                        impensa_celery-beat_1
+fb302e386b0d   redis:alpine                             "docker-entrypoint.s…"   8 minutes ago   Up 8 minutes           6379/tcp                                     impensa_redis_1
+81505a3056bd   postgres:13.0-alpine                     "docker-entrypoint.s…"   8 minutes ago   Up 8 minutes           5432/tcp                                     impensa_db_1
+a2626f8fa2f0   seafileltd/seafile-mc:latest             "/sbin/my_init -- /s…"   7 days ago      Up 2 hours             0.0.0.0:182->80/tcp                          seafile
+193fb6ebe698   wangqiru/mercury-parser-api:latest       "dumb-init -- npm ru…"   7 days ago      Up 2 hours             3000/tcp                                     mercury
+55f3fe45e2d1   wangqiru/opencc-api-server:latest        "docker-entrypoint.s…"   7 days ago      Up 2 hours                                                          opencc
+7e1d1781c3ce   postgres:13-alpine                       "docker-entrypoint.s…"   7 days ago      Up 2 hours                                                          postgres
+9b9ac008cc55   wangqiru/ttrss:latest                    "sh /docker-entrypoi…"   7 days ago      Up 2 hours             0.0.0.0:181->80/tcp                          ttrss
+ebd96d7b5ac7   memcached:1.5.6                          "memcached -m 256"       7 days ago      Up 2 hours             11211/tcp                                    seafile-memcached
+ee74fea346ad   mariadb:10.5                             "docker-entrypoint.s…"   7 days ago      Up 2 hours             3306/tcp                                     seafile-mysql
+a252258932b0   lscr.io/linuxserver/jellyfin:latest      "/init"                  7 days ago      Up 2 hours             8920/tcp, 0.0.0.0:183->8096/tcp              jellyfin
+919403e7cee8   joplin/server:latest                     "tini -- node dist/a…"   3 months ago    Up 2 hours             0.0.0.0:143->143/tcp, 0.0.0.0:186->186/tcp   joplin_app_1
+a351de474f0d   postgres:13                              "docker-entrypoint.s…"   3 months ago    Up 2 hours             0.0.0.0:5432->5432/tcp                       joplin_db_1
+940c4404ef1e   tomsquest/docker-radicale                "docker-entrypoint.s…"   3 months ago    Up 2 hours (healthy)   0.0.0.0:185->5232/tcp                        radicale
+9afa5adbdaa2   ghcr.io/meeb/tubesync:latest             "/init"                  4 months ago    Up 2 hours (healthy)   0.0.0.0:184->4848/tcp                        tubesync
